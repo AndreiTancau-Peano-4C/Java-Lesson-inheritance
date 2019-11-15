@@ -38,3 +38,20 @@ SuperClasse **ContoBancario**
   - permettere di conoscere il valore del **fido** 
   - permettere di creare un nuovo **fido**
   - ridefinire il metodo **preleva** della **super-classe** --> è possibile prelevare una determinata somma di denaro da un conto con **fido** solo se questo presenta un bilancio (incluso il **fido**) sufficiente .
+
+Teoria:
+
+EREDITARIETA':
+
+L'Ereditarietà è un meccanismo utilizzato nella programmazione ad oggetti che permette la creazione di nuove classi (classi derivate) a partire da classi preesistenti (superclassi), ereditandone le caratteristiche (metodi e/o attributi). In questo modo si va a creare una gerarchia di classi dove quelle derivate avranno delle caratteristiche simili alle superclassi implementando e ridefinendone i metodi.
+Nell'esercizio svolto abbiamo utilizzato la superClasse ContoBancario che estende la classe derivata ContoEsteso.
+
+POLIMORFISMO:
+
+IL Polimorfismo è un concetto strattamente collegato all'eretitarietà tra classi; permette di ottenere comportamenti e risultati diversi invocando gli stessi metodi in oggetti diversi. Il polimorfismo si basa sulla possibilità di ridefinire nelle classi derivate le funzioni dei metodi delle superclassi modificandone il codice. Per fare ciò e neccessario scriver @override prima del metodo nella sottoClasse, questo servere per sovrascrivere il metodo.
+nell'esercizio svolto il metodo prelievo è stato utilizzato sia nella superclasse ContoBancario e ContoEsteso ma con differenze specifiche per ogni metodo.
+
+THIS:
+
+This è un comando che serve a identificare l'attributo se si ha una variabile con lo stesso nome all'interno dei metodi. E' usato principalmente nei costruttori per riferirsi alla variabile di classe.
+
