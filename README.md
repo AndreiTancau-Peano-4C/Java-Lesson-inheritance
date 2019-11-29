@@ -1,37 +1,37 @@
 ﻿# Ereditarietà e Polimorfismo 
 Riusare il software
 # Ereditarietà
-• A volte si incontrano classi con funzionalità simili In quanto sottendono concetti semanticamente “vicini” 
+• A volte si incontrano classi con funzionalità simili In quanto sottendono concetti semanticamente “vicini” <br>
 • È possibile creare classi disgiunte replicando le porzione di stato/comportamento condivise L’approccio “Copia&Incolla”, però, non è una strategia vincente (Difficoltà di manutenzione correttiva e perfettiva) . Meglio “specializzare” codice funzionante Sostituendo il minimo necessario 
 
-• Meccanismo per definire una nuova classe (classe derivata) come specializzazione di un’altra (classe base) 
-	– La classe base modella un concetto generico 
-	– La classe derivata modella un concetto più specifico 
-• La classe derivata: – Dispone di tutte le funzionalità (attributi e metodi) di quella base 
-	– Può aggiungere funzionalità proprie
-– Può ridefinirne il funzionamento di metodi esistenti (polimorfismo)
+• Meccanismo per definire una nuova classe (classe derivata) come specializzazione di un’altra (classe base)<br> 
+	– La classe base modella un concetto generico <br>
+	– La classe derivata modella un concetto più specifico <br>
+• La classe derivata: – Dispone di tutte le funzionalità (attributi e metodi) di quella base <br>
+	– Può aggiungere funzionalità proprie<br>
+– Può ridefinirne il funzionamento di metodi esistenti (polimorfismo)<br>
 Ereditarietà in Java 
-• Si definisce una classe derivata attraverso la parola chiave “extends” 
-	– Seguita dal nome della classe base 
-• Gli oggetti della classe derivata sono, a tutti gli effetti, estensioni della classe base 
-	– Anche nella loro rappresentazione in memoria 
+• Si definisce una classe derivata attraverso la parola chiave “extends” <br>
+	– Seguita dal nome della classe base <br>
+• Gli oggetti della classe derivata sono, a tutti gli effetti, estensioni della classe base <br>
+	– Anche nella loro rappresentazione in memoria <br>
 
-# Tipi ed ereditarietà 
-• Ogni classe definisce un tipo: 
-	– Un oggetto, istanza di una sotto-classe, è formalmente compatibile con il tipo della classe 	    base
-	– Il contrario non è vero! 
-• Esempio 
-	– Un’automobile è un veicolo
-	– Un veicolo non è (necessariamente) un’automobile 
-• La compatibilità diviene effettiva se – I metodi ridefiniti nella sotto-classe rispettano la semantica della superclasse 
-• L’ereditarietà gode delle proprietà transitiva 
-	– Un tandem è un veicolo (poiché è una bicicletta, che a sua volta è un veicolo)
+# Tipi ed ereditarietà <br>
+• Ogni classe definisce un tipo: <br>
+	– Un oggetto, istanza di una sotto-classe, è formalmente compatibile con il tipo della classe base<br>
+	– Il contrario non è vero! <br>
+• Esempio <br>
+	– Un’automobile è un veicolo<br>
+	– Un veicolo non è (necessariamente) un’automobile <br>
+• La compatibilità diviene effettiva se – I metodi ridefiniti nella sotto-classe rispettano la semantica della superclasse <br>
+• L’ereditarietà gode delle proprietà transitiva <br>
+	– Un tandem è un veicolo (poiché è una bicicletta, che a sua volta è un veicolo)<br>
 
 # Vantaggi dell’ereditarietà
-•Evitare la duplicazione di codice 
-• Permettere il riuso di funzionalità 
-• Semplificare la costruzione di nuove classi 
-• Facilitare la manutenzione
+•Evitare la duplicazione di codice <br>
+• Permettere il riuso di funzionalità <br>
+• Semplificare la costruzione di nuove classi <br>
+• Facilitare la manutenzione<br>
 
 # Polimorfismo
 il polimorfismo è un altro concetto fondamentale della programmazione ad oggetti e risulta essere anche quello più ostico per la piena comprensione della sua utilità. Dal punto di vista implementativo il polimorfismo per i metodi si ottiene utilizzando
